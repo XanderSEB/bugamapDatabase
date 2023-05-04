@@ -54,7 +54,7 @@ INSERT INTO cablecar.bugapoint (ID, AdminID, Title, Longitude, Latitude, Discrim
 INSERT INTO cablecar.bugapoint (ID, AdminID, Title, Longitude, Latitude, Discriminator, ParkID) VALUES (58, 1, 'GreenGarden', 8.49622702503792, 49.47918572633147, 'Veranstaltung', 1);
 INSERT INTO cablecar.bugapoint (ID, AdminID, Title, Longitude, Latitude, Discriminator, ParkID) VALUES (59, 1, 'Festhalle Baumhain', 8.496386667506881, 49.48094791787229, 'Veranstaltung', 1);
 INSERT INTO cablecar.bugapoint (ID, AdminID, Title, Longitude, Latitude, Discriminator, ParkID) VALUES (60, 1, 'Freizeithaus', 8.498614911558343, 49.482173671510985, 'Veranstaltung', 1);
-INSERT INTO cablecar.bugapoint (ID, AdminID, Title, Longitude, Latitude, Discriminator, ParkID) VALUES (61, 1, 'Bühne Freizeizwiese', 8.49928356707215, 49.48232798090942, 'Veranstaltung', 1);
+INSERT INTO cablecar.bugapoint (ID, AdminID, Title, Longitude, Latitude, Discriminator, ParkID) VALUES (61, 1, 'Bühne Freizeitwiese', 8.49928356707215, 49.48232798090942, 'Veranstaltung', 1);
 INSERT INTO cablecar.bugapoint (ID, AdminID, Title, Longitude, Latitude, Discriminator, ParkID) VALUES (62, 1, 'Teehaus', 8.500108859676667, 49.48448834555812, 'Veranstaltung', 1);
 INSERT INTO cablecar.bugapoint (ID, AdminID, Title, Longitude, Latitude, Discriminator, ParkID) VALUES (63, 1, 'Teehaus Wiese', 8.499785413610638, 49.484376575221944, 'Veranstaltung', 1);
 INSERT INTO cablecar.bugapoint (ID, AdminID, Title, Longitude, Latitude, Discriminator, ParkID) VALUES (64, 1, 'Seebühne', 8.49584736685369, 49.48352007868405, 'Veranstaltung', 1);
