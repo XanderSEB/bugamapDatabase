@@ -1,3 +1,25 @@
+CREATE DATABASE IF NOT EXISTS railway;
+USE railway;
+
+    
+CREATE TABLE bugapoint (ID int(10) NOT NULL AUTO_INCREMENT, ParkID int(10) NOT NULL, AdminID int(10) NOT NULL, Title varchar(255) NOT NULL, Longitude double NOT NULL, Latitude double NOT NULL, Discriminator varchar(255) NOT NULL, Description varchar(4095), Iconname varchar(255), PRIMARY KEY (ID)) ENGINE=InnoDB;
+CREATE TABLE report (ID int(10) NOT NULL AUTO_INCREMENT, BugaPointID int(10) NOT NULL, AdminID int(10) NOT NULL, ReportText varchar(4095), PRIMARY KEY (ID)) ENGINE=InnoDB;
+CREATE TABLE admin (ID int(10) NOT NULL AUTO_INCREMENT, Firstname varchar(255), Lastname varchar(255), Emailadress varchar(255) UNIQUE, Password varchar(255), Role varchar(255), PRIMARY KEY (ID)) ENGINE=InnoDB;
+CREATE TABLE park (ID int(10) NOT NULL AUTO_INCREMENT, Title varchar(255), Latitude double NOT NULL, Longitude double NOT NULL, PRIMARY KEY (ID)) ENGINE=InnoDB;
+CREATE TABLE persondensityreport (ID int(10) NOT NULL AUTO_INCREMENT, Latitude double NOT NULL, Longitude double NOT NULL, ValidTill date, PRIMARY KEY (ID)) ENGINE=InnoDB;
+CREATE TABLE route (ID int(10) NOT NULL AUTO_INCREMENT, Departure timestamp NULL, Arrival timestamp NULL, TransportationType int(10), PRIMARY KEY (ID)) ENGINE=InnoDB;
+ALTER TABLE bugapoint ADD CONSTRAINT manages FOREIGN KEY (AdminID) REFERENCES admin (ID);
+ALTER TABLE report ADD CONSTRAINT `works on` FOREIGN KEY (AdminID) REFERENCES admin (ID);
+ALTER TABLE report ADD CONSTRAINT got FOREIGN KEY (BugaPointID) REFERENCES bugapoint (ID);
+ALTER TABLE bugapoint ADD CONSTRAINT has FOREIGN KEY (ParkID) REFERENCES park (ID);
+
+
+
+INSERT INTO railway.admin (ID, Firstname, Lastname, Emailadress, Password, Role) VALUES (1, 'Maximilian', 'König', 'maxk@buga23.com', '123', 'ADMIN');
+
+INSERT INTO railway.park (ID, Title, Latitude, Longitude) VALUES (1, 'Luisenpark', 49.483499541271726, 8.496217654958482);
+INSERT INTO railway.park (ID, Title, Latitude, Longitude) VALUES (2, 'Spinellipark', 49.50183504604085, 8.523433330577125);
+
 INSERT INTO railway.bugapoint (ID, ParkID, AdminID, Title, Longitude, Latitude, Discriminator, Description, Iconname) VALUES (1, 1, 1, 'Haupteingang Luisenpark', 8.49593039, 49.47935742, 'Eingang & Ausgang', '<b>Öffnungszeiten: </b> Mo-So: 09:00 - 19:00', 'Haupteingang');
 INSERT INTO railway.bugapoint (ID, ParkID, AdminID, Title, Longitude, Latitude, Discriminator, Description, Iconname) VALUES (2, 1, 1, 'Eingang Fernmeldeturm', 8.49241332, 49.48649596, 'Eingang & Ausgang', '<b>Öffnungszeiten: </b> Mo-So: 09:00 - 19:00', 'Eingang');
 INSERT INTO railway.bugapoint (ID, ParkID, AdminID, Title, Longitude, Latitude, Discriminator, Description, Iconname) VALUES (7, 1, 1, 'Ausgang Fichtestraße', 8.49128666, 49.48299854, 'Eingang & Ausgang', null, 'Ausgang');
