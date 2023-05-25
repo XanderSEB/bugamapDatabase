@@ -1,7 +1,8 @@
-CREATE DATABASE IF NOT EXISTS railway;
-USE railway;
 
-    
+DROP DATABASE IF EXISTS railway;
+CREATE DATABASE railway;
+USE railway;
+   
 CREATE TABLE bugapoint (ID int(10) NOT NULL AUTO_INCREMENT, ParkID int(10) NOT NULL, AdminID int(10) NOT NULL, Title varchar(255) NOT NULL, Longitude double NOT NULL, Latitude double NOT NULL, Discriminator varchar(255) NOT NULL, Description varchar(4095), Iconname varchar(255), PRIMARY KEY (ID)) ENGINE=InnoDB;
 CREATE TABLE report (ID int(10) NOT NULL AUTO_INCREMENT, BugaPointID int(10) NOT NULL, AdminID int(10) NOT NULL, ReportText varchar(4095), PRIMARY KEY (ID)) ENGINE=InnoDB;
 CREATE TABLE admin (ID int(10) NOT NULL AUTO_INCREMENT, Firstname varchar(255), Lastname varchar(255), Emailadress varchar(255) UNIQUE, Password varchar(255), Role varchar(255), PRIMARY KEY (ID)) ENGINE=InnoDB;
