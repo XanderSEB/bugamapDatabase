@@ -16,7 +16,7 @@ ALTER TABLE bugapoint ADD CONSTRAINT has FOREIGN KEY (ParkID) REFERENCES park (I
 
 
 
-INSERT INTO railway.admin (ID, Firstname, Lastname, Emailadress, Password, Role) VALUES (1, 'Maximilian', 'König', 'maxk@buga23.com', '123', 'ADMIN');
+INSERT INTO railway.admin (ID, Firstname, Lastname, Emailadress, Password, Role) VALUES (1, 'Maximilian', 'König', 'maxk@buga23.com', '$2a$10$otIywiois7E22x9YzOYil.bujwGVE2P8MD4nG5skjyHwo6saQq1tG', 'ADMIN');
 
 INSERT INTO railway.park (ID, Title, Latitude, Longitude) VALUES (1, 'Luisenpark', 49.483499541271726, 8.496217654958482);
 INSERT INTO railway.park (ID, Title, Latitude, Longitude) VALUES (2, 'Spinellipark', 49.50183504604085, 8.523433330577125);
