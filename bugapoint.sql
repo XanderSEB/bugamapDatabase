@@ -113,7 +113,7 @@ INSERT INTO railway.bugapoint (ID, ParkID, AdminID, Title, Longitude, Latitude, 
 INSERT INTO railway.bugapoint (ID, ParkID, AdminID, Title, Longitude, Latitude, Discriminator, Description, Iconname) VALUES (76, 1, 1, 'Information', 8.496141734361913, 49.47939765071183, 'Infrastruktur', null, 'Information');
 INSERT INTO railway.bugapoint (ID, ParkID, AdminID, Title, Longitude, Latitude, Discriminator, Description, Iconname) VALUES (77, 1, 1, 'Verleih von Mobilitätshilfen', 8.496251240283463, 49.47939093860362, 'Infrastruktur', null, 'Infrastruktur');
 INSERT INTO railway.bugapoint (ID, ParkID, AdminID, Title, Longitude, Latitude, Discriminator, Description, Iconname) VALUES (78, 1, 1, 'Barrierefreies WC 22', 8.495906193323107, 49.47931039323362, 'WC', null, 'WC');
-INSERT INTO railway.bugapoint (ID, ParkID, AdminID, Title, Longitude, Latitude, Discriminator, Description, Iconname) VALUES (79, 1, 1, 'BUGA 23 Shop', 8.49607561757909, 49.47929562656809, 'Infrastruktur', null, 'Shop');
+INSERT INTO railway.bugapoint (ID, ParkID, AdminID, Title, Longitude, Latitude, Discriminator, Description, Iconname) VALUES (79, 1, 1, 'BUGA 23 Shop', 8.496208943255787, 49.479265522810316, 'Infrastruktur', null, 'Shop');
 INSERT INTO railway.bugapoint (ID, ParkID, AdminID, Title, Longitude, Latitude, Discriminator, Description, Iconname) VALUES (80, 1, 1, 'Duojing-Bahn-Haltestelle', 8.496176320202295, 49.479557043472845, 'Haltestelle', null, 'Duojing-Bahn-Haltestelle');
 INSERT INTO railway.bugapoint (ID, ParkID, AdminID, Title, Longitude, Latitude, Discriminator, Description, Iconname) VALUES (81, 1, 1, 'Treffpunkt', 8.496021142406452, 49.47955704347063, 'Infrastruktur', null, 'Treffpunkt');
 INSERT INTO railway.bugapoint (ID, ParkID, AdminID, Title, Longitude, Latitude, Discriminator, Description, Iconname) VALUES (82, 1, 1, 'Kasse', 8.492289593448396, 49.486898308891675, 'Infrastruktur', null, 'Kasse');
@@ -361,3 +361,4 @@ INSERT INTO railway.bugapoint (ID, ParkID, AdminID, Title, Longitude, Latitude, 
 INSERT INTO railway.bugapoint (ID, ParkID, AdminID, Title, Longitude, Latitude, Discriminator, Description, Iconname) VALUES (327, 2, 1, 'ÖPNV-Haltestelle Stadtbahn', 8.52501937907711, 49.49529575951297, 'Haltestelle', null, 'Haltestelle');
 INSERT INTO railway.bugapoint (ID, ParkID, AdminID, Title, Longitude, Latitude, Discriminator, Description, Iconname) VALUES (328, 2, 1, 'ÖPNV-Haltestelle Bus', 8.526664611956782, 49.503050500980315, 'Haltestelle', null, 'Haltestelle');
 INSERT INTO railway.bugapoint (ID, ParkID, AdminID, Title, Longitude, Latitude, Discriminator, Description, Iconname) VALUES (329, 2, 1, 'ÖPNV-Haltestelle Bus', 8.521621900645515, 49.503852279925034, 'Haltestelle', null, 'Haltestelle');
+
