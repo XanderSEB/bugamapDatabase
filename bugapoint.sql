@@ -355,9 +355,9 @@ INSERT INTO railway.bugapoint (ID, ParkID, AdminID, Title, Longitude, Latitude, 
 INSERT INTO railway.bugapoint (ID, ParkID, AdminID, Title, Longitude, Latitude, Discriminator, Description, Iconname) VALUES (327, 2, 1, 'ÖPNV-Haltestelle Stadtbahn', 8.52501937907711, 49.49529575951297, 'Haltestelle', null, 'Haltestelle');
 INSERT INTO railway.bugapoint (ID, ParkID, AdminID, Title, Longitude, Latitude, Discriminator, Description, Iconname) VALUES (328, 2, 1, 'ÖPNV-Haltestelle Bus', 8.526664611956782, 49.503050500980315, 'Haltestelle', null, 'Haltestelle');
 INSERT INTO railway.bugapoint (ID, ParkID, AdminID, Title, Longitude, Latitude, Discriminator, Description, Iconname) VALUES (329, 2, 1, 'ÖPNV-Haltestelle Bus', 8.521621900645515, 49.503852279925034, 'Haltestelle', null, 'Haltestelle');
-INSERT INTO railway.bugapoint (ParkID, AdminID, Title, Longitude, Latitude, Discriminator, Description, Iconname) VALUES (2, 1, 'bwegt Solarexpress Halt Nord', 49.49937, 8.51303, 'Haltestelle', null, 'Solarexpress');
-INSERT INTO railway.bugapoint (ParkID, AdminID, Title, Longitude, Latitude, Discriminator, Description, Iconname) VALUES (2, 1, 'bwegt Solarexpress Halt West', 49.4986, 8.51651, 'Haltestelle', null, 'Solarexpress');
-INSERT INTO railway.bugapoint (ParkID, AdminID, Title, Longitude, Latitude, Discriminator, Description, Iconname) VALUES (2, 1, 'bwegt Solarexpress Halt Süd', 49.49808, 8.52024, 'Haltestelle', 'Hier gibt es auch einen Ticketstand.', 'Solarexpress');
-INSERT INTO railway.bugapoint (ParkID, AdminID, Title, Longitude, Latitude, Discriminator, Description, Iconname) VALUES (2, 1, 'bwegt Solarexpress Halt Ost', 49.50161, 8.51919, 'Haltestelle', 'Hier gibt es auch einen Ticketstand.', 'Solarexpress');
+INSERT INTO railway.bugapoint (ParkID, AdminID, Title, Longitude, Latitude, Discriminator, Description, Iconname) VALUES (2, 1, 'bwegt Solarexpress Halt Nord', 8.51303, 49.49937, 'Haltestelle', null, 'Solarexpress');
+INSERT INTO railway.bugapoint (ParkID, AdminID, Title, Longitude, Latitude, Discriminator, Description, Iconname) VALUES (2, 1, 'bwegt Solarexpress Halt West', 8.51651, 49.4986, 'Haltestelle', null, 'Solarexpress');
+INSERT INTO railway.bugapoint (ParkID, AdminID, Title, Longitude, Latitude, Discriminator, Description, Iconname) VALUES (2, 1, 'bwegt Solarexpress Halt Süd', 8.52024, 49.49808, 'Haltestelle', 'Hier gibt es auch einen Ticketstand.', 'Solarexpress');
+INSERT INTO railway.bugapoint (ParkID, AdminID, Title, Longitude, Latitude, Discriminator, Description, Iconname) VALUES (2, 1, 'bwegt Solarexpress Halt Ost', 8.51919, 49.50161, 'Haltestelle', 'Hier gibt es auch einen Ticketstand.', 'Solarexpress');
 
 
