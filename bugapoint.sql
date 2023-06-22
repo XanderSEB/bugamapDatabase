@@ -7,7 +7,7 @@ CREATE TABLE bugapoint (ID int(10) NOT NULL AUTO_INCREMENT, ParkID int(10) NOT N
 CREATE TABLE report (ID int(10) NOT NULL AUTO_INCREMENT, BugaPointID int(10), ParkID int(10), Adminemail varchar(255), Title varchar(255) NOT NULL, Message varchar(4095) NOT NULL, isClosed boolean NOT NULL, PRIMARY KEY (ID)) ENGINE=InnoDB;
 CREATE TABLE admin (ID int(10) NOT NULL AUTO_INCREMENT, Firstname varchar(255), Lastname varchar(255), Emailadress varchar(255) UNIQUE, Password varchar(255), Role varchar(255), PRIMARY KEY (ID)) ENGINE=InnoDB;
 CREATE TABLE park (ID int(10) NOT NULL AUTO_INCREMENT, Title varchar(255), Latitude double NOT NULL, Longitude double NOT NULL, PRIMARY KEY (ID)) ENGINE=InnoDB;
-CREATE TABLE persondensityreport (ID int(10) NOT NULL AUTO_INCREMENT, Latitude double NOT NULL, Longitude double NOT NULL, Validtill TIMESTAMP NOT NULL, PRIMARY KEY (ID)) ENGINE=InnoDB;
+CREATE TABLE persondensityreport (ID int(10) NOT NULL AUTO_INCREMENT, Latitude double NOT NULL, Longitude double NOT NULL, Validtill TIMESTAMP NOT NULL, Density int(10), PRIMARY KEY (ID)) ENGINE=InnoDB;
 CREATE TABLE route (ID int(10) NOT NULL AUTO_INCREMENT, Departure timestamp NULL, Arrival timestamp NULL, TransportationType int(10), PRIMARY KEY (ID)) ENGINE=InnoDB;
 ALTER TABLE bugapoint ADD CONSTRAINT manages FOREIGN KEY (AdminID) REFERENCES admin (ID);
 ALTER TABLE report ADD CONSTRAINT manages FOREIGN KEY (Adminemail) REFERENCES admin (Emailadress);
