@@ -7,13 +7,13 @@ CREATE TABLE bugapoint (ID int(10) NOT NULL AUTO_INCREMENT, ParkID int(10) NOT N
 CREATE TABLE report (ID int(10) NOT NULL AUTO_INCREMENT, BugaPointID int(10), ParkID int(10), Adminemail varchar(255), Title varchar(255) NOT NULL, Message varchar(4095) NOT NULL, isClosed boolean NOT NULL, PRIMARY KEY (ID)) ENGINE=InnoDB;
 CREATE TABLE admin (ID int(10) NOT NULL AUTO_INCREMENT, Firstname varchar(255), Lastname varchar(255), Emailadress varchar(255) UNIQUE, Password varchar(255), Role varchar(255), PRIMARY KEY (ID)) ENGINE=InnoDB;
 CREATE TABLE park (ID int(10) NOT NULL AUTO_INCREMENT, Title varchar(255), Latitude double NOT NULL, Longitude double NOT NULL, PRIMARY KEY (ID)) ENGINE=InnoDB;
-CREATE TABLE persondensityreport (ID int(10) NOT NULL AUTO_INCREMENT, BugaPointID int(10), Validtill TIMESTAMP NOT NULL, Density int(10) NOT NULL, PRIMARY KEY (ID)) ENGINE=InnoDB;
+CREATE TABLE persondensityreport (ID int(10) NOT NULL AUTO_INCREMENT, Bugapointid int(10), Validtill TIMESTAMP NOT NULL, Density int(10) NOT NULL, PRIMARY KEY (ID)) ENGINE=InnoDB;
 ALTER TABLE bugapoint ADD CONSTRAINT manages FOREIGN KEY (AdminID) REFERENCES admin (ID);
-ALTER TABLE report ADD CONSTRAINT manages FOREIGN KEY (Adminemail) REFERENCES admin (Emailadress);
+ALTER TABLE report ADD CONSTRAINT admins FOREIGN KEY (Adminemail) REFERENCES admin (Emailadress);
 ALTER TABLE report ADD CONSTRAINT got FOREIGN KEY (BugaPointID) REFERENCES bugapoint (ID);
-ALTER TABLE report ADD CONSTRAINT got FOREIGN KEY (ParkID) REFERENCES park (ID);
+ALTER TABLE report ADD CONSTRAINT locates FOREIGN KEY (ParkID) REFERENCES park (ID);
 ALTER TABLE bugapoint ADD CONSTRAINT has FOREIGN KEY (ParkID) REFERENCES park (ID);
-ALTER TABLE persondensityreport ADD CONSTRAINT got FOREIGN KEY (BugaPointID) references bugapoint (ID);
+ALTER TABLE persondensityreport ADD CONSTRAINT location FOREIGN KEY (BugaPointID) references bugapoint (ID);
 
 
 
