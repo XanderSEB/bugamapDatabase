@@ -364,4 +364,4 @@ INSERT INTO railway.bugapoint (ParkID, AdminID, Title, Longitude, Latitude, Disc
 
 
 
-INSERT INTO railway.report (Bugapointid, Adminemail, Title, Message, isclosed)VALUES (25, 'maxk@buga23.com', 'Alpakas sind mega cute!', 'Ich steh hier und schau die cuten Alpakas an.', true);
+INSERT INTO railway.report (Bugapointid, Adminemail, Title, Message, isclosed)VALUES (25, 'maxk@buga23.de', 'Alpakas sind mega cute!', 'Ich steh hier und schau die cuten Alpakas an.', true);
