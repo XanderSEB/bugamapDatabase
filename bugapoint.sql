@@ -17,9 +17,9 @@ ALTER TABLE persondensityreport ADD CONSTRAINT location FOREIGN KEY (BugaPointID
 
 
 INSERT INTO railway.admin (ID, Firstname, Lastname, Emailadress, Password, Role) VALUES (1, 'Maximilian', 'König', 'maxk@buga23.de', '$2a$10$otIywiois7E22x9YzOYil.bujwGVE2P8MD4nG5skjyHwo6saQq1tG', 'ADMIN');
-INSERT INTO railway.admin (ID, Firstname, Lastname, Emailadress, Password, Role) VALUES (1, 'Admin', 'Admin', 'admin1@buga23.de', '$2a$10$5.u9w0tffRJwgKEaZOBQAuS6huZ50jcjD.xzmlyvLD3F3YVHzHc/G', 'ADMIN');
-INSERT INTO railway.admin (ID, Firstname, Lastname, Emailadress, Password, Role) VALUES (1, 'Maximilian', 'König', 'admin2@buga23.de', '$2a$10$CWfIc6LTb/YQ0Ez6nxamN.o6zwg3vv7L6ASPMJYOCdJiSjZEJ8x5i', 'ADMIN');
-INSERT INTO railway.admin (ID, Firstname, Lastname, Emailadress, Password, Role) VALUES (1, 'Maximilian', 'König', 'admin3@buga23.de', '$2a$10$cnQMNURqvrn7l4bWVKe1B.ZzdNsGUFUoZFz3LysE0iZ01.R330Cxu', 'ADMIN');
+INSERT INTO railway.admin (ID, Firstname, Lastname, Emailadress, Password, Role) VALUES (2, 'Admin', 'Admin', 'admin1@buga23.de', '$2a$10$5.u9w0tffRJwgKEaZOBQAuS6huZ50jcjD.xzmlyvLD3F3YVHzHc/G', 'ADMIN');
+INSERT INTO railway.admin (ID, Firstname, Lastname, Emailadress, Password, Role) VALUES (3, 'Maximilian', 'König', 'admin2@buga23.de', '$2a$10$CWfIc6LTb/YQ0Ez6nxamN.o6zwg3vv7L6ASPMJYOCdJiSjZEJ8x5i', 'ADMIN');
+INSERT INTO railway.admin (ID, Firstname, Lastname, Emailadress, Password, Role) VALUES (4, 'Maximilian', 'König', 'admin3@buga23.de', '$2a$10$cnQMNURqvrn7l4bWVKe1B.ZzdNsGUFUoZFz3LysE0iZ01.R330Cxu', 'ADMIN');
 
 INSERT INTO railway.park (ID, Title, Latitude, Longitude) VALUES (1, 'Luisenpark', 49.483499541271726, 8.496217654958482);
 INSERT INTO railway.park (ID, Title, Latitude, Longitude) VALUES (2, 'Spinellipark', 49.50183504604085, 8.523433330577125);
